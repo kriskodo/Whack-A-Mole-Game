@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 2</title>
+	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<h1>Whack-a-mole! <span class="score">0</span></h1>
+	<div id="dataInput">
+		<input type="text" name="text" placeholder="Въведи време за игра(в секунди)" value=10>
+
+		<button id="increment">+10</button>
+
+		<button id="decrement">-10</button>
+
+		<select class="chooseOption">
+			<option>Easy</option>
+
+			<option>Medium</option>
+
+			<option>Hard</option>
+		</select>
+	</div>
+	<div class="game">
+		<div class="hole">
+			<div class="mole" data-num="1"></div>
+		</div>
+		<div class="hole">
+			<div class="mole" data-num="2"></div>
+		</div>
+		<div class="hole">
+			<div class="mole" data-num="3"></div>
+		</div>
+		<div class="hole">
+			<div class="mole" data-num="4"></div>
+		</div>
+		<div class="hole">
+			<div class="mole" data-num="5"></div>
+		</div>
+		<div class="hole">
+			<div class="mole" data-num="6"></div>
+		</div>
+	</div>
+	
+	<div class="actions">
+		<button>Start!</button>
+	</div><!-- /.actions -->
+
+	<div class="finish disappear">
+		<h2 class="sentence">You hit</h2>
+		<h2 class="result"></h2>
+	</div><!-- /.final -->
+	
+<script src="index.js"></script>
+</body>
+</html>
